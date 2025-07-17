@@ -1,0 +1,14 @@
+{ 
+ "da": { 
+^ "share_prompt": "Vil du dele din lokation?", 
+^ "scanned": "Tak fordi du scannede mig." 
+ }, 
+ "en": { 
+^ "share_prompt": "Would you like to share your location?", 
+^ "scanned": "Thank you for scanning me." 
+ }, 
+ "fr": { 
+^ "share_prompt": "Souhaitez-vous partager votre position ?", 
+^ "scanned": "Merci de m'avoir scanné." 
+ } 
+} 
