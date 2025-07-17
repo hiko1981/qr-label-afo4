@@ -9,7 +9,7 @@ const supabase = createClient(
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const token = context.params?.token as string;
-  const { data } = await supabase.from("labels").select("*").eq("token", token).single();
+  const { data } = await supabase.from("flows").select("*").eq("token", token).single();
   if (!data) return { notFound: true };
   const lang = context.req.headers["accept-language"]?.split(",")[0]?.split("-")[0] ?? "da";
   const text = data.translated_texts?.[lang] || data.translated_texts?.["da"] || data.text_original;
