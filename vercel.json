@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm install --save-dev @types/node@latest && npm run build",
+  "ignoreCommand": "echo 'skip git ignore'",
+  "outputDirectory": "out",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
